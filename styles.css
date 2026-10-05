@@ -253,21 +253,25 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 .intro-sub { margin: 18px 0 32px; font-size: clamp(1rem, .95rem + .4vw, 1.2rem); }
 
 /* ---------- ❶ GLOWとは ---------- */
-.about-grid { display: grid; gap: clamp(28px, 4vw, 56px); align-items: start; }
-@media (min-width: 900px) { .about-grid { grid-template-columns: 1.1fr .9fr; } }
-.about-text { display: grid; gap: 16px; font-size: 1.05rem; min-width: 0; }
+.about-grid { display: grid; gap: clamp(32px, 4vw, 48px); }
+.about-text { display: grid; gap: 18px; font-size: clamp(1.05rem, 1rem + .3vw, 1.2rem); line-height: 2; max-width: 46em; min-width: 0; }
 .rep {
     display: grid;
-    grid-template-columns: 96px 1fr;
-    gap: 16px;
-    padding: 20px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+    padding: clamp(24px, 4vw, 44px);
     background: var(--color-surface-warm);
-    border-radius: 8px;
+    border-radius: 12px;
     min-width: 0;
 }
-.rep img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; }
-.rep figcaption { display: grid; gap: 10px; font-size: 1rem; line-height: 1.8; }
-.rep-name { font-weight: 700; color: var(--color-heading); }
+@media (min-width: 720px) {
+    .rep { grid-template-columns: 200px 1fr; justify-items: stretch; align-items: center; gap: clamp(28px, 4vw, 48px); }
+}
+.rep img { width: clamp(150px, 20vw, 200px); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; }
+.rep figcaption { display: grid; gap: 14px; font-size: clamp(1rem, .95rem + .3vw, 1.15rem); line-height: 1.95; min-width: 0; }
+.rep-name { font-weight: 700; color: var(--color-heading); font-size: clamp(1.4rem, 1.2rem + .8vw, 1.75rem); line-height: 1.4; }
+.rep-name span { display: block; font-size: .6em; color: var(--color-muted); letter-spacing: .05em; }
 .company {
     margin-top: clamp(28px, 4vw, 48px);
     display: grid;
