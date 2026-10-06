@@ -217,6 +217,7 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
     box-shadow: 0 6px 18px rgba(6, 199, 85, .28);
     transition: transform .2s ease, box-shadow .2s ease;
 }
+.btn-line .btn-text { display: block; text-align: center; }
 .btn-line:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(6, 199, 85, .32); }
 .btn-line.big { font-size: 1.1rem; min-height: 64px; padding-inline: 40px; }
 .btn-line[aria-disabled="true"] { background: #8FA39A; box-shadow: none; cursor: default; }
