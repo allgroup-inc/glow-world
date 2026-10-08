@@ -226,7 +226,7 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 /* ---------- 呼びかけ ---------- */
 .intro { text-align: center; padding-block: clamp(24px, 4vw, 48px) var(--block-y); }
 /* 2026-10-08 ロゴ確定: サービス名の札をロゴ画像に */
-.service-logo { display: flex; flex-direction: column; align-items: center; gap: 0; margin-bottom: clamp(40px, 5vw, 64px); }
+.service-logo { display: flex; flex-direction: column; align-items: center; gap: 0; margin-bottom: clamp(80px, 10vw, 128px); }
 /* ロゴの細い英字・金の線に合わせた控えめな見出し(2026-10-08 小柳さん「ロゴと上の文字がしっくりこない」) */
 .service-logo p {
     display: flex; align-items: center; gap: 14px;
