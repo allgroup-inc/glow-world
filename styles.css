@@ -238,7 +238,8 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 }
 @media (prefers-color-scheme: dark) { .service-logo p::before, .service-logo p::after { background: #E9B949; } }
 @media (max-width: 400px) { .service-logo p { letter-spacing: .18em; padding-left: .18em; gap: 10px; } }
-.service-logo img { display: block; width: min(640px, 100%); height: auto; }
+.service-logo picture { display: block; width: 100%; }
+.service-logo img { display: block; width: min(640px, 100%); height: auto; margin-inline: auto; }
 .service-name {
     display: inline-flex;
     flex-wrap: wrap;
