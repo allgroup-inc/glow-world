@@ -226,8 +226,18 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 /* ---------- 呼びかけ ---------- */
 .intro { text-align: center; padding-block: clamp(24px, 4vw, 48px) var(--block-y); }
 /* 2026-10-08 ロゴ確定: サービス名の札をロゴ画像に */
-.service-logo { display: flex; flex-direction: column; align-items: center; gap: 2px; margin-bottom: 18px; }
-.service-logo p { font-size: 1rem; font-weight: 700; color: var(--color-heading); }
+.service-logo { display: flex; flex-direction: column; align-items: center; gap: 0; margin-bottom: 18px; }
+/* ロゴの細い英字・金の線に合わせた控えめな見出し(2026-10-08 小柳さん「ロゴと上の文字がしっくりこない」) */
+.service-logo p {
+    display: flex; align-items: center; gap: 14px;
+    font-size: clamp(.8rem, .74rem + .3vw, .9rem); font-weight: 400; letter-spacing: .3em; padding-left: .3em; white-space: nowrap;
+    color: var(--color-muted);
+}
+.service-logo p::before, .service-logo p::after {
+    content: ""; width: clamp(20px, 4vw, 36px); height: 1px; background: #C99A2E; flex: none;
+}
+@media (prefers-color-scheme: dark) { .service-logo p::before, .service-logo p::after { background: #E9B949; } }
+@media (max-width: 400px) { .service-logo p { letter-spacing: .18em; padding-left: .18em; gap: 10px; } }
 .service-logo img { display: block; width: min(640px, 100%); height: auto; }
 .service-name {
     display: inline-flex;
