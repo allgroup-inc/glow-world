@@ -38,3 +38,13 @@
     }, { threshold: 0.6 });
     counters.forEach((el) => io.observe(el));
 })();
+
+// Alibaba.com の問い合わせの目安: ページを開いてからの秒数 × (400,000 ÷ 86,400)。2026-11-04 大分県版から反映
+(() => {
+    const el = document.getElementById('live-count');
+    if (!el) return;
+    const t0 = Date.now();
+    const tick = () => { el.textContent = Math.floor((Date.now() - t0) / 1000 * 400000 / 86400).toLocaleString('ja-JP'); };
+    tick();
+    setInterval(tick, 250);
+})();

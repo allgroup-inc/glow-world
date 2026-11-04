@@ -526,3 +526,29 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 .bp-store-sp .bp-logo b { font-size: .6rem; letter-spacing: 0; }
 .bp-grid-sp .booth-yours { font-size: .62rem; padding: 2px 8px; top: -12px; }
 @media (max-width: 899px) { .bp-sp { display: none; } }
+
+/* ---------- Alibaba.com の大きさ(チャンス): 紺の面に金の大きな数字(2026-11-04 大分県版から反映) ---------- */
+.giant { background: radial-gradient(ellipse 120% 80% at 80% 0%, #0E4A7A 0%, #0A1F33 62%); color: #FFFFFF; }
+.giant h2 { color: #FFFFFF; }
+.giant .eyebrow { color: #F2CF7A; }
+.giant .foot { color: #C9D6E2; }
+.giant-hero { margin-top: 28px; text-align: center; }
+.giant-num { font-family: var(--font-display); font-weight: 800; color: #E8B84A; line-height: 1; font-size: clamp(4.2rem, 2.4rem + 9vw, 9rem); font-variant-numeric: tabular-nums; text-shadow: 0 6px 30px rgba(232, 184, 74, .25); }
+.giant-num small { font-size: .32em; margin-left: .1em; color: #FFFFFF; }
+.giant-label { margin-top: 10px; font-size: clamp(1.05rem, 1rem + .5vw, 1.35rem); font-weight: 700; }
+.giant-live { margin: 32px auto 0; max-width: 560px; padding: 18px 20px; border-radius: 12px; border: 1px solid rgba(232, 184, 74, .45); background: rgba(0, 0, 0, .18); text-align: center; }
+.live-head { font-size: .95rem; color: #EEF3F7; display: inline-flex; align-items: center; gap: 8px; }
+.live-dot { width: 10px; height: 10px; border-radius: 50%; background: #E0623A; box-shadow: 0 0 0 0 rgba(224, 98, 58, .7); animation: live-pulse 1.6s ease-out infinite; }
+@keyframes live-pulse { to { box-shadow: 0 0 0 12px rgba(224, 98, 58, 0); } }
+.live-num { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.4rem, 1.8rem + 3vw, 3.6rem); color: #E8B84A; font-variant-numeric: tabular-nums; line-height: 1.2; }
+.live-num small { font-size: .45em; color: #FFFFFF; margin-left: .15em; }
+.live-note { font-size: .82rem; color: #C9D6E2; }
+.giant-grid { list-style: none; padding: 0; margin-top: 32px; display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 760px) { .giant-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.giant-grid li { padding: 18px 16px; border-radius: 10px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .16); }
+.g-num { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.9rem, 1.4rem + 1.8vw, 2.6rem); color: #E8B84A; line-height: 1.15; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.g-num small { font-size: .45em; color: #FFFFFF; margin-left: .1em; }
+.giant-grid li p:last-child { margin-top: 6px; font-size: .95rem; color: #EEF3F7; line-height: 1.6; }
+.giant-chance { margin-top: 36px; text-align: center; font-size: clamp(1.05rem, 1rem + .5vw, 1.3rem); line-height: 1.9; }
+.giant-chance strong { color: #E8B84A; font-size: 1.15em; }
+@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
