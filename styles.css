@@ -372,7 +372,7 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 .bp-banner-sub { font-size: .8rem; text-shadow: 0 1px 4px rgba(0, 0, 0, .6); }
 .bp-featured { padding: 14px 16px 6px; font-weight: 700; font-size: .85rem; color: #333; }
 .bp-grid { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; padding: 8px 16px 18px; }
-@media (max-width: 600px) { .bp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .bp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 26px; } } /* 「あなたの商品がここに」の札が上の段の字にかぶらないように */
 .bp-card { position: relative; display: grid; gap: 1px; }
 .bp-img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 6px; background: #F1EDE6; }
 .bp-en { font-size: .75rem; font-weight: 700; color: #222; margin-top: 4px; }
@@ -388,6 +388,7 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 .bp-banner-sp { margin: 10px; min-height: 90px; padding: 12px; }
 .bp-banner-sp .bp-banner-title { font-size: 1.2rem; }
 .bp-grid-sp { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 4px 10px 0; gap: 12px 8px; }
+.bp-grid-sp .bp-jp { font-size: .62rem; white-space: nowrap; overflow: hidden; text-overflow: clip; } /* スマホ見本の小さな字が「ー」だけ次の行に落ちないように */
 .booth-credit { margin-top: 6px; font-size: .8rem; color: var(--color-muted); }
 .booth-credit ul { list-style: none; margin-top: 4px; display: grid; gap: 2px; }
 .booth-yours { position: absolute; top: -16px; left: 50%; transform: translateX(-50%); white-space: nowrap; background: var(--color-red); color: #fff; font-size: .85rem; font-weight: 700; padding: 3px 14px; border-radius: 999px; box-shadow: 0 4px 10px rgba(185, 80, 47, .3); }
