@@ -600,4 +600,4 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 .voice blockquote { background: transparent; padding: 4px 0 4px 14px; font-weight: 400; color: var(--color-text); }
 .voice figcaption { font-size: .9rem; color: var(--color-muted); text-align: right; }
 
-.fee-sub { font-size: .85rem; color: var(--color-muted); margin-top: 2px; } /* 2026-11-16 月1万円は「海外営業代行費(翻訳・商談対応など)」と表記(JCコネクト様のご要望) */
+.fee-sub { font-size: .85rem; color: var(--color-muted); margin-top: 2px; } /* 2026-11-16 月1万円の呼び方(2026-11-19「販売委託 基本料」に変更)と表記(JCコネクト様のご要望) */
