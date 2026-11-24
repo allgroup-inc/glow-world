@@ -655,3 +655,7 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 .voice .voice-head,.voice blockquote,.voice figcaption{grid-column:1 !important}
 /* 2026-11-24 小柳さん「この写真も大きく」→ 16:9で大きく */
 .challenger-photo{aspect-ratio:16/9 !important;margin-bottom:16px}
+/* 2026-11-24 小柳さん「声の写真を、挑戦した人たちの写真の大きさと合わせて」→ 4列・16:9でそろえる */
+@media (min-width: 900px) { .voices { grid-template-columns: repeat(3, 1fr) !important; gap: 16px; } }
+.voice .voice-photo{aspect-ratio:16/9 !important}
+.voice figcaption{text-align:left}
