@@ -662,3 +662,10 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 /* 2026-11-24 小柳さん「赤い数字を左右バランスよく」→ 2つの数字の高さをそろえる */
 .sim-result > div{display:flex;flex-direction:column;justify-content:space-between}
 .sim-result .sim-value{margin-top:auto}
+/* 2026-11-24 小柳さん「返金保証を中央でそろえて目立つように」 */
+.refund{text-align:center;max-width:620px;padding:22px 20px;border:3px solid #C9962B;background:linear-gradient(180deg,#FFF6E0,#FFEFC8);box-shadow:0 6px 18px rgba(201,150,43,.22);border-radius:16px}
+.refund strong{display:inline-block;background:#B9502F;color:#fff;font-size:1.15rem;letter-spacing:.06em;padding:6px 18px;border-radius:999px;margin-bottom:12px}
+.refund .nw{font-size:1.08rem;font-weight:700;color:#00335C}
+.refund .refund-em{color:#B9502F;font-size:1.25em}
+.refund strong{display:table;margin:0 auto 12px}
+@media (max-width:560px){.refund .nw{font-size:1rem}.refund .pc-br{display:none}}
