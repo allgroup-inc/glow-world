@@ -659,3 +659,6 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 @media (min-width: 900px) { .voices { grid-template-columns: repeat(3, 1fr) !important; gap: 16px; } }
 .voice .voice-photo{aspect-ratio:16/9 !important}
 .voice figcaption{text-align:left}
+/* 2026-11-24 小柳さん「赤い数字を左右バランスよく」→ 2つの数字の高さをそろえる */
+.sim-result > div{display:flex;flex-direction:column;justify-content:space-between}
+.sim-result .sim-value{margin-top:auto}
