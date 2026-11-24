@@ -683,3 +683,7 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 .tier-note{font-size:15px !important}
 @media (max-width:560px){.tier{font-size:14px !important}.tier th{font-size:12.5px;padding:8px 4px !important}.tier td{padding:9px 4px !important}.tier td:nth-child(2){font-size:14px}.tier td:nth-child(3){font-size:15px !important}.tier td:nth-child(4){font-size:13px}.tier-pics img{width:22px !important;height:22px !important;margin-right:-6px !important}.tier-more{font-size:11px !important}.tier-note{font-size:13px !important}}
 @media (max-width:560px){.tier-more{display:none}.tier td:nth-child(4),.tier th:nth-child(4){font-size:12px}}
+/* 2026-11-24 小柳さん「世界の架け橋のロゴ表記を1.5倍くらいに」 */
+.service-logo{width:min(960px, calc(100vw - 32px));max-width:none;position:relative;left:50%;transform:translateX(-50%)}
+.service-logo img{width:100%;height:auto}
+.service-logo p{font-size:1.5em}
