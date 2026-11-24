@@ -649,3 +649,7 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 .voice .voice-photo{grid-row:1 / span 3;width:150px;height:150px;border-radius:14px;margin:0;border:none;box-shadow:0 2px 8px rgba(0,0,0,.12)}
 .voice .voice-head,.voice blockquote,.voice figcaption{grid-column:2}
 @media (max-width:560px){.voice{grid-template-columns:1fr}.voice .voice-photo{grid-row:auto;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;margin-bottom:12px}.voice .voice-head,.voice blockquote,.voice figcaption{grid-column:1}}
+/* 2026-11-24 小柳さん「まだ小さい」→ どの画面でも写真を横いっぱいに(カードの一番上) */
+.voice{grid-template-columns:1fr !important}
+.voice .voice-photo{grid-row:auto !important;grid-column:1 !important;width:100% !important;height:auto !important;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin:0 0 6px !important}
+.voice .voice-head,.voice blockquote,.voice figcaption{grid-column:1 !important}
