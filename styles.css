@@ -644,3 +644,8 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 .includes-compare{margin-top:18px;text-align:center;font-size:1.05rem;line-height:1.8}
 .includes-compare strong{color:#B9502F;font-size:1.2em}
 .includes-note{margin-top:10px;font-size:.8rem;color:#66717A;line-height:1.6}
+/* 2026-11-24 小柳さん「声の写真が小さい」→ 大きく(左に写真、右に言葉) */
+.voice{display:grid;grid-template-columns:150px 1fr;column-gap:20px;align-items:start}
+.voice .voice-photo{grid-row:1 / span 3;width:150px;height:150px;border-radius:14px;margin:0;border:none;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.voice .voice-head,.voice blockquote,.voice figcaption{grid-column:2}
+@media (max-width:560px){.voice{grid-template-columns:1fr}.voice .voice-photo{grid-row:auto;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;margin-bottom:12px}.voice .voice-head,.voice blockquote,.voice figcaption{grid-column:1}}
