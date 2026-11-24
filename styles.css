@@ -653,3 +653,5 @@ h3 { font-size: 1.2rem; line-height: 1.5; color: var(--color-heading); }
 .voice{grid-template-columns:1fr !important}
 .voice .voice-photo{grid-row:auto !important;grid-column:1 !important;width:100% !important;height:auto !important;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin:0 0 6px !important}
 .voice .voice-head,.voice blockquote,.voice figcaption{grid-column:1 !important}
+/* 2026-11-24 小柳さん「この写真も大きく」→ 16:9で大きく */
+.challenger-photo{aspect-ratio:16/9 !important;margin-bottom:16px}
